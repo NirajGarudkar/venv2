@@ -1,0 +1,194 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: state_wise_data
+  examples: |
+    - Hey, what's the current confirmed cases in [maharashtra]{"entity": "State","value": "Maharashtra"}?
+    - tell me the current confirmed cases in [maharshtra]{"entity": "State","value": "Maharashtra"}?
+    - what is the number of current confirmed cases in [maharashtra]{"entity": "State","value": "Maharashtra"}?
+    - [maharashtra]{"entity": "State","value": "Maharashtra"} current confirmed cases?
+    - [maharashtra]{"entity": "State","value": "Maharashtra"} confirmed cases?
+    - [delhi]{"entity": "State","value": "Delhi"} confirmed cases?
+    - [andaman and nicobar islands]{"entity": "State","value": "Andaman and Nicobar Islands"}
+    - [andhra pradesh]{"entity": "State","value": "Andhra Pradesh"}
+    - [arunachal pradesh]{"entity": "State","value": "Arunachal Pradesh"}
+    - [assam]{"entity": "State","value": "Assam"}
+    - [bihar]{"entity": "State","value": "Bihar"}
+    - [chandigarh]{"entity": "State","value": "Chandigarh"}
+    - [chhattisgarh]{"entity": "State","value": "Chhattisgarh"}
+    - [dadra and nagar haveli and daman and diu]{"entity": "State","value": "Dadra and Nagar Haveli and Daman and Diu"}
+    - [delhi]{"entity": "State","value": "Delhi"}
+    - [goa]{"entity": "State","value": "Goa"}
+    - [gujarat]{"entity": "State","value": "Gujarat"}
+    - [haryana]{"entity": "State","value": "Haryana"}
+    - [himachal pradesh]{"entity": "State","value": "Himachal Pradesh"}
+    - [jammu and kashmir]{"entity": "State","value": "Jammu and Kashmir"}
+    - [jharkhand]{"entity": "State","value": "Jharkhand"}
+    - [karnataka]{"entity": "State","value": "Karnataka"}
+    - [kerala]{"entity": "State","value": "Kerala"}
+    - [ladakh]{"entity": "State","value": "Ladakh"}
+    - [lakshadweep]{"entity": "State","value": "Lakshadweep"}
+    - [madhya pradesh]{"entity": "State","value": "Madhya Pradesh"}
+    - [maharashtra]{"entity": "State","value": "Maharashtra"}
+    - [manipur]{"entity": "State","value": "Manipur"}
+    - [meghalaya]{"entity": "State","value": "Meghalaya"}
+    - [mizoram]{"entity": "State","value": "Mizoram"}
+    - [nagaland]{"entity": "State","value": "Nagaland"}
+    - [odisha]{"entity": "State","value": "Odisha"}
+    - [puducherry]{"entity": "State","value": "Puducherry"}
+    - [punjab]{"entity": "State","value": "Punjab"}
+    - [rajasthan]{"entity": "State","value": "Rajasthan"}
+    - [sikkim]{"entity": "State","value": "Sikkim"}
+    - [tamil nadu]{"entity": "State","value": "Tamil Nadu"}
+    - [telangana]{"entity": "State","value": "Telangana"}
+    - [tripura]{"entity": "State","value": "Tripura"}
+    - [uttarakhand]{"entity": "State","value": "Uttarakhand"}
+    - [uttar pradesh]{"entity": "State","value": "Uttar Pradesh"}
+    - [west bengal]{"entity": "State","value": "West Bengal"}
+    - Hey, what’s the total count of confirmed cases in [Delhi]{"entity": "State","value": "Delhi"}, [Maharashtra]{"entity": "State","value": "Maharashtra"} [altogether]{"entity": "opr","value": "altogether"}?
+    - Hey, what’s the total count of confirmed cases in [Delhi]{"entity": "State","value": "Delhi"}, [Maharashtra]{"entity": "State","value": "Maharashtra"} [together]{"entity": "opr","value": "altogether"}?
+
+
+- intent: date_wise_data
+  examples: |
+    - What’s the confirmed case count from [1st]{"entity": "day","type":"value","value": "01"} [Oct]{"entity": "month","value": "10"} [2020]{"entity": "year","value": "2020"} [to]{"entity": "operation","value": "to"} [12th]{"entity": "day","type":"value","value": "12"} [Oct]{"entity": "month","value": "10"} [2020]{"entity": "year","value": "2020"}?
+    - What’s the confirmed case count from [1st]{"entity": "day","type":"value","value": "01"} [Oct]{"entity": "month","value": "10"} [2020]{"entity": "year","value": "2020"} [between]{"entity": "operation","value": "to"} [12th]{"entity": "day","type":"value","value": "12"} [Oct]{"entity": "month","value": "10"} [2020]{"entity": "year","value": "2020"}?
+    - [1st]{"entity": "day","type":"value","value": "01"} [nov]{"entity": "month","value": "11"} [2020]{"entity": "year","value": "2020"}
+    - [2nd]{"entity": "day","type":"value","value": "02"} [dec]{"entity": "month","value": "12"} [2020]{"entity": "year","value": "2020"}
+    - [3rd]{"entity": "day","type":"value","value": "03"} [jan]{"entity": "month","value": "01"} [2020]{"entity": "year","value": "2020"}
+    - [4th]{"entity": "day","type":"value","value": "04"} [feb]{"entity": "month","value": "02"} [2021]{"entity": "year","value": "2021"}
+    - [5th]{"entity": "day","type":"value","value": "05"} [mar]{"entity": "month","value": "03"} [2020]{"entity": "year","value": "2020"}
+    - [6th]{"entity": "day","type":"value","value": "06"} [apr]{"entity": "month","value": "04"} [2020]{"entity": "year","value": "2020"}
+    - [8th]{"entity": "day","type":"value","value": "07"} [may]{"entity": "month","value": "05"} [2021]{"entity": "year","value": "2021"}
+    - [9th]{"entity": "day","type":"value","value": "08"} [june]{"entity": "month","value": "06"} [2021]{"entity": "year","value": "2021"}
+    - [10th]{"entity": "day","type":"value","value": "09"} [july]{"entity": "month","value": "07"} [2020]{"entity": "year","value": "2020"}
+    - [11th]{"entity": "day","type":"value","value": "10"} [aug]{"entity": "month","value": "08"} [2021]{"entity": "year","value": "2021"}
+    - [12th]{"entity": "day","type":"value","value": "12"} [sep]{"entity": "month","value": "09"} [2020]{"entity": "year","value": "2020"}
+    - [13th]{"entity": "day","type":"value","value": "13"} [oct]{"entity": "month","value": "10"} [2020]{"entity": "year","value": "2020"}
+    - [14th]{"entity": "day","type":"value","value": "14"} [september]{"entity": "month","value": "09"} [2020]{"entity": "year","value": "2020"}
+    - [15]{"entity": "day","value": "15"}
+    - [16]{"entity": "day","value": "16"}
+    - [17]{"entity": "day","value": "17"}
+    - [18]{"entity": "day","value": "18"}
+    - [19]{"entity": "day","value": "19"}
+    - [20]{"entity": "day","value": "20"}
+    - [21]{"entity": "day","value": "21"}
+    - [22]{"entity": "day","value": "22"}
+    - [23]{"entity": "day","value": "23"}
+    - [24]{"entity": "day","value": "24"}
+    - [25]{"entity": "day","value": "25"}
+    - [26]{"entity": "day","value": "26"}
+    - [27]{"entity": "day","value": "27"}
+    - [28]{"entity": "day","value": "28"}
+    - [29]{"entity": "day","value": "29"}
+    - [30]{"entity": "day","value": "30"}
+    - [31]{"entity": "day","value": "31"}
+    - [15th]{"entity": "day","type":"value","value": "15"}
+    - [16th]{"entity": "day","type":"value","value": "16"}
+    - [17th]{"entity": "day","type":"value","value": "17"}
+    - [18th]{"entity": "day","type":"value","value": "18"}
+    - [19th]{"entity": "day","type":"value","value": "19"}
+    - [20th]{"entity": "day","type":"value","value": "20"}
+    - [21st]{"entity": "day","type":"value","value": "21"}
+    - [22nd]{"entity": "day","type":"value","value": "22"}
+    - [23rd]{"entity": "day","type":"value","value": "23"}
+    - [24th]{"entity": "day","type":"value","value": "24"}
+    - [25th]{"entity": "day","type":"value","value": "25"}
+    - [26th]{"entity": "day","type":"value","value": "26"}
+    - [27th]{"entity": "day","type":"value","value": "27"}
+    - [28th]{"entity": "day","type":"value","value": "28"}
+    - [29th]{"entity": "day","type":"value","value": "29"}
+    - [30th]{"entity": "day","type":"value","value": "30"}
+    - [31st]{"entity": "day","type":"value","value": "31"}
+
+
