@@ -11,4 +11,4 @@
 ## 1.In pycharm open terminal and activate the virtual environment.
 ## 2.Then in terminal type "rasa shell".
 ## 3.Now open another terminal (Keep pervious terminal open) and type "rasa run actions".
-## 4.Now go in the firat terminal and you can use it.
+## 4.Now go in the first terminal and you can use it.
