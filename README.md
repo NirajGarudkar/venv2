@@ -6,8 +6,8 @@
 
 ## Now you are ready to run the code. (Pycharm Recommanded).
 ## Make Sure you have an active Internet Connection.
-# Important
-# Make sure you have installed python 3.7.8 In your system.
+
+# Important : Make sure you have installed python 3.7.8 In your system.
 
 
 # How to run?
