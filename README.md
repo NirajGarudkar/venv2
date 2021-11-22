@@ -11,6 +11,8 @@
 
 # How to run?
 ## 1.In pycharm open terminal and activate the virtual environment.
+![image](https://user-images.githubusercontent.com/90611519/142902265-e86362bd-4e3a-450a-81e9-fe7f358677a7.png)
+
 ## 2.Then in terminal type "rasa shell".
 ![image](https://user-images.githubusercontent.com/90611519/142895014-06823200-0d9a-4992-b1e1-c85b30b474b3.png)
 
